@@ -1,0 +1,18 @@
+# Secrets
+.env
+
+# Python
+.venv/
+__pycache__/
+**/__pycache__/
+*.pyc
+
+# OS/editor cruft
+.DS_Store
+Thumbs.db
+
+# Leftover original download (already unzipped into data/)
+data HW 6.zip
+
+# This report's local preview server config (ports/paths specific to this machine)
+.claude/

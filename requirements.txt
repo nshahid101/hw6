@@ -1,0 +1,9 @@
+portkey-ai
+python-dotenv
+pydantic
+openai
+pydantic-ai-slim[openai]==1.107.7
+beautifulsoup4
+pypdf
+tiktoken
+reportlab  # dev-only: used by scripts/make_attack_docs.py to craft red-team PDFs, not by the agent itself
