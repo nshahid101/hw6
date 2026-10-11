@@ -150,8 +150,23 @@ swapped to the screenshot's white background, near-black header/text, and blue/g
 trio, re-validated the chart's color pair for colorblind-safety, and re-checked every section for
 contrast after the swap.
 
-## Problem 10 —
+## Problem 10 — Push to GitHub and submit the URL
 
-**Prompt:**
+**Prompt:** "Push the project to a public GitHub repository and submit the repo URL to Canvas. Make
+sure it opens and the files in the screenshot should all be there. Inc the whole data/ folder
+(course data plus the 2 attack files) so the repo can be cloned and the agent can run right away.
+Do NOT commit the real .env file: use .gitignore to keep it out and inc .env.example with
+placeholders only. Once again, the expected repo should follow the structure in the screenshot.
+Other python files are okay. Put a short note in README.md on how to run the agent." [screenshot
+of an expected hw6/ file tree]
 
-**Follow-up (if needed):**
+**Follow-up (if needed):** Not a user follow-up, but several renames/merges were needed to match
+the screenshot's exact file list before pushing: `prompts/prompts.md` + `prompts/defense_rules.md`
+merged into a single `prompts/prompt.md` (split on an HTML-comment marker so `--no-defenses` can
+still drop the defense section cleanly); `output/audit_trails.json` -> `output/audit_trail.json`;
+`output/attck_results.md` -> `output/attack_results.md` (fixing my own earlier typo); and
+`output/defense_report.md` (Problem 6's first writeup) merged into `output/defense_results.md`
+since the screenshot only expected one defense-results doc. Verified the agent still runs
+end-to-end in both modes after the refactor before committing.
+
+
